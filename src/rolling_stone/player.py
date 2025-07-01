@@ -1,5 +1,4 @@
-
-class Player():
+class Player:
     def __init__(self):
         self.score = 0
         self.name = None
@@ -15,7 +14,6 @@ class Player():
 
         if self.input_name == "":
             raise InvalidPlayerNameException("Player name cannot be empty.")
-        
 
         else:
             self.name = self.input_name
@@ -23,4 +21,5 @@ class Player():
 
 class InvalidPlayerNameException(Exception):
     """Exception raised when a player name is invalid."""
+
     pass

@@ -1,6 +1,7 @@
 from rolling_stone.player import *
 import pytest
 
+
 def test_player(new_player):
     assert isinstance(new_player, Player)
     assert new_player.score == 0
@@ -15,9 +16,11 @@ def test_player_receive_score(new_player):
     # Assert
     assert new_player.score == RECEIVED_SCORE
 
+
 @pytest.fixture
 def new_player():
     return Player()
+
 
 def test_input_name_for_player(mocker, new_player):
     # Arrange
