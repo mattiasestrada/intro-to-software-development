@@ -1,3 +1,8 @@
+class InvalidPlayerNameException(Exception):
+    """Exception raised when a player name is invalid."""
+    pass
+
+
 class Player:
     def __init__(self):
         self.score = 0
@@ -18,8 +23,4 @@ class Player:
         else:
             self.name = self.input_name
 
-
-class InvalidPlayerNameException(Exception):
-    """Exception raised when a player name is invalid."""
-
-    pass
+        return self.name
