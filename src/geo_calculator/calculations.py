@@ -15,5 +15,5 @@ def gardners_equation(velocity):
     Returns:
         density: Bulk density of the lithology in g/cm3
     """
-    density = 0.31*(velocity**0.25)
+    density = 0.31 * (velocity**0.25)
     return density
